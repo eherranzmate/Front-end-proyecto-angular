@@ -9,7 +9,7 @@
         <div *ngFor="let product of cartService.getCart()">
           {{product.name}} - {{product.price}}€
         </div>
-        <span class="total-price">Total: {{cartService.getTotalPrice()}}€ <button class="pay-button">Pagar</button></span>
+        <span class="total-price">Total: {{cartService.getTotalPrice()}}€ <button (click)="clearCart()" class="pay-button">Pagar</button></span>
         
     </div>
   </div>  

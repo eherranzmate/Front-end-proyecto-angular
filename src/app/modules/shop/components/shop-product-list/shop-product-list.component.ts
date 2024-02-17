@@ -11,6 +11,7 @@ import { ShopService } from '../../services/shop.service';
 export class ShopProductListComponent {
 
   productList: ShopProduct [] = []
+  private cart: ShopProduct[] = [];
 
   constructor(private shopService: ShopService, public cartService:CartService) {}
 
@@ -30,6 +31,13 @@ export class ShopProductListComponent {
     const currentVisibility = this.cartService.getCartVisibility();
     this.cartService.setCartVisibility(!currentVisibility);
   }
+
+  clearCart(): void {
+    this.cartService.clearCart() 
+    
+  }
+
+
 
 
 }

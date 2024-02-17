@@ -47,7 +47,7 @@ formHandler() {
     this.registerForm.reset()
   } else{
     this.status ='error'
-    this.message= 'El formulario es inválido'
+    this.message= 'El formulario es inválido, recuerda que el password debe tener de 8 a 12 caracteres y que debe incluir minimo: Un caracter en mayúscula, uno en minúscula, un número y un carácter especial"'
   }
 }
 
