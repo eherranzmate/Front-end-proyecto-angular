@@ -1,0 +1,27 @@
+footer {
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(to right, #182336, #243b55);
+    bottom: 0;
+    position: fixed;
+    margin-top: 20px;
+}
+
+.instagram-icon {
+    width: 30px;
+    margin: 10px;
+}
+
+.facebook-icon {
+    width: 40px;
+    margin: 10px;
+    
+}
+
+.footer-icons{
+    display: flex;
+    flex-direction: row-reverse;
+    margin:10px;
+    align-items: center;
+}
+

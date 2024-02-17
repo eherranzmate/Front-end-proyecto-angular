@@ -1,0 +1,19 @@
+<div class="shop-container">
+  <div class="button-carrito">
+    <button class="icon-button" (click)="CartDown()">
+        <img src="../../../../../assets/carrito.png">
+        <span>{{cartService.getCart().length}}</span>
+    </button>
+    <div *ngIf="cartService.getCartVisibility()" class="cart-dropdown">
+        <!-- Mostrar productos en el desplegable -->
+        <div *ngFor="let product of cartService.getCart()">
+          {{product.name}} - {{product.price}}€
+        </div>
+        <span class="total-price">Total: {{cartService.getTotalPrice()}}€ <button class="pay-button">Pagar</button></span>
+        
+    </div>
+  </div>  
+  <div class="products">
+      <app-shop-product *ngFor="let product of productList" [product]="product" (addToCart)="addToCartHandler($event)"></app-shop-product>
+  </div>
+</div>

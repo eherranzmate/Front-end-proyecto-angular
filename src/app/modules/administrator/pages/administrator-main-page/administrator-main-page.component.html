@@ -1,0 +1,11 @@
+<div class="admin-page-container">
+  <h2>Panel administrativo para gestionar los productos y los personajes:</h2>
+  <router-outlet></router-outlet>
+  <ul>
+    <li><a [routerLink]="'create-product'">Crear producto</a></li>
+    <li><a [routerLink]="'delete-product'">Borrar producto</a></li>
+    <li><a [routerLink]="'edit-product/'">Editar producto</a></li>
+  </ul>
+</div>
+
+

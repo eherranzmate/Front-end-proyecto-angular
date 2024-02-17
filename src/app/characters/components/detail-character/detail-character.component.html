@@ -1,0 +1,10 @@
+<div class="character">
+    <div class="character-card">
+        <h3>{{character.name}}</h3>
+        <p>{{character.description}}</p>
+        <p> Intérprete: {{character.actor}}</p>
+        <img class="character-img" [src]="character.picture"/>
+        <button [routerLink]="'/api/characters'">Volver a personajes</button>
+    </div>
+</div>
+

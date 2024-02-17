@@ -1,0 +1,47 @@
+.container-home {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding-top: 100px;
+}
+
+.links-home {
+    width: 40%;
+    background: linear-gradient(to right, #182336, #243b55);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.links-home:hover {
+    transform: scale(1.05);
+}
+
+.link-content {
+    position: relative;
+}
+
+.home-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.link-title {
+    text-decoration: none !important;
+    text-align: center;
+    color: white;
+    display: block; /* Hace que el enlace ocupe todo el ancho del contenedor */
+    font-size: 24px; /* Ajusta el tamaño del texto según tu preferencia */
+    margin-top: 5px
+}
+
+a {
+    text-decoration: none;
+}

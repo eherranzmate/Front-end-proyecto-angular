@@ -1,0 +1,10 @@
+.auth-container {
+    padding-top: 100px;
+}
+
+h2 {
+    margin-top: 20px;
+    text-align: center;
+    color: linear-gradient(to right, #182336, #243b55);
+    font-size: 40px;
+}

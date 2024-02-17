@@ -1,0 +1,10 @@
+.container-delete-product{
+    padding-top: 100px;
+    padding-left: 50px;
+}
+
+.delete-product{
+    border-bottom: 1px solid #ccc; 
+    padding-bottom: 10px; 
+    margin-bottom: 10px;
+}

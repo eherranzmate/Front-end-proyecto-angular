@@ -1,0 +1,6 @@
+<div class="character-card">
+    <h3>{{character.name}}</h3>
+    <p>{{character.description}}</p>
+    <img class="character-img" [src]="character.picture"/>
+    <button (click)="navigateToDetails(character._id)">Detalles</button>
+</div>

@@ -1,0 +1,6 @@
+#content {
+    position: relative;
+    min-height: 100vh; /* Esto ayuda a que el contenido ocupe al menos la altura completa de la ventana */
+    box-sizing: border-box; /* Esto asegura que los márgenes y el padding no afecten la altura */
+    padding-bottom: 80px; /* Ajusta según la altura de tu footer */
+  }

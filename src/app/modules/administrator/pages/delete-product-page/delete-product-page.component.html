@@ -1,0 +1,9 @@
+<div class="container-delete-product">
+    <div class="delete-product" *ngFor="let product of productList">
+        <h2>{{ product.name }}</h2>
+        <img [src]="product.image"/>
+        <p>{{ product.description }}</p>
+        <p>Price: {{ product.price }}</p>
+        <button (click)="deleteProduct(product._id)">Borrar</button>
+    </div>
+</div>
