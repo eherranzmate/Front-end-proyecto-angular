@@ -9,6 +9,6 @@ export class HouseService {
   constructor(private http: HttpClient) { }
 
   getHouses() {
-    return this.http.get('http://localhost:8084/api/houses');
+    return this.http.get('https://back-end-proyecto-angular.vercel.app/api/houses');
   }
 }

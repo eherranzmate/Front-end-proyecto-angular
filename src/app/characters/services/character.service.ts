@@ -9,9 +9,9 @@ export class CharacterService {
   constructor(private http: HttpClient) { }
 
   getCharacters() {
-    return this.http.get('http://localhost:8084/api/characters');
+    return this.http.get('https://back-end-proyecto-angular.vercel.app/api/characters');
   }
   getOne(id: string){
-    return this.http.get(`http://localhost:8084/api/characters/${id}`)
+    return this.http.get(`https://back-end-proyecto-angular.vercel.app/api/characters/${id}`)
   }
 }

@@ -9,6 +9,6 @@ export class ShopService {
   constructor(private http: HttpClient) { }
 
   getProducts() {
-    return this.http.get('http://localhost:8084/api/products')
+    return this.http.get('https://back-end-proyecto-angular.vercel.app/api/products')
   }
 }

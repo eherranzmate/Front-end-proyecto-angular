@@ -10,19 +10,19 @@ export class AuthService {
   constructor(private http: HttpClient) { }
 
   register(user: any) {
-    return this.http.post('http://localhost:8084/api/users/register', user)
+    return this.http.post('https://back-end-proyecto-angular.vercel.app/api/users/register', user)
   }
   confirmUser(token: string){
-    return this.http.get(`http://localhost:8084/api/users/confirm-user/${token}`)
+    return this.http.get(`https://back-end-proyecto-angular.vercel.app/api/users/confirm-user/${token}`)
   }
   login(user: any) {
-    return this.http.post('http://localhost:8084/api/users/login',user)
+    return this.http.post('https://back-end-proyecto-angular.vercel.app/api/users/login',user)
   }
   logout() {
-    return this.http.get('http://localhost:8084/api/users/logout')
+    return this.http.get('https://back-end-proyecto-angular.vercel.app/api/users/logout')
   }
   isAdmin(): Observable<boolean> {
-    return this.http.get<boolean>('http://localhost:8084/api/users/is-admin')
+    return this.http.get<boolean>('https://back-end-proyecto-angular.vercel.app/api/users/is-admin')
   }
 
 

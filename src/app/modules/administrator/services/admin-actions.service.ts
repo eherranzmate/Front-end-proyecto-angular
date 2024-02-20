@@ -10,21 +10,21 @@ export class AdminActionsService {
 constructor(private http: HttpClient) { }
 
 createProduct(product: any){
-  return this.http.post('http://localhost:8084/api/products/post', product)
+  return this.http.post('https://back-end-proyecto-angular.vercel.app/api/products/post', product)
 }
 getProducts(){
-  return this.http.get<ShopProduct[]>('http://localhost:8084/api/products');
+  return this.http.get<ShopProduct[]>('https://back-end-proyecto-angular.vercel.app/api/products');
 }
 
 deleteProduct(id: any){
-  return this.http.delete(`http://localhost:8084/api/products/delete/${id}`)
+  return this.http.delete(`https://back-end-proyecto-angular.vercel.app/api/products/delete/${id}`)
 }
 
 getProductById(id: string){
-  return this.http.get(`http://localhost:8084/api/products/${id}`)
+  return this.http.get(`https://back-end-proyecto-angular.vercel.app/api/products/${id}`)
 }
 
 editProduct(id: string, productToEdit: FormData){
-  return this.http.patch<ShopProduct>(`http://localhost:8084/api/products/edit/${id}`, productToEdit)
+  return this.http.patch<ShopProduct>(`https://back-end-proyecto-angular.vercel.app/api/products/edit/${id}`, productToEdit)
 }
 }
