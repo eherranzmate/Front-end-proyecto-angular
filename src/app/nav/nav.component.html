@@ -2,7 +2,9 @@
     <div class="nav-logo">
         <a [routerLink]="''"> <img class="nav-img" src="../../assets/gameOfThrones.png" alt="logo gameOfThrones"/></a>
     </div>
-    <ul>
+    <div class="menu-icon" (click)="toggleMenu()"><img src="../../assets/icons8-menú-64.png"/>
+    </div>
+    <ul [ngClass]="{ 'show': isMenuOpen }">
         <li><a [routerLink]="'/auth/register'">Registro</a></li>
         <li><a [routerLink]="'/auth/login'">Login</a></li>
         <li><a [routerLink]="'/auth/profile'">Perfil</a></li>
