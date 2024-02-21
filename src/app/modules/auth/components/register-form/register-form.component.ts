@@ -11,7 +11,8 @@ import { Router } from '@angular/router';
 export class RegisterFormComponent {
   message: string = "";
   status: 'loading' | 'unauthorized' | 'success' | 'disabled' |'error' = 'disabled'
-registerForm!: FormGroup
+  registerForm!: FormGroup
+  showPassword: boolean = false;
 
 constructor(private fb: FormBuilder, private authService: AuthService, private router: Router){
   this.registerForm = this.fb.group({
@@ -49,6 +50,10 @@ formHandler() {
     this.status ='error'
     this.message= 'El formulario es inválido, recuerda que el password debe tener de 8 a 12 caracteres y que debe incluir minimo: Un caracter en mayúscula, uno en minúscula, un número y un carácter especial"'
   }
+}
+
+togglePasswordVisibility() {
+  this.showPassword = !this.showPassword;
 }
 
 

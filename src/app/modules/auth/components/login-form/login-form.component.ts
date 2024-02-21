@@ -10,7 +10,8 @@ import { Router } from '@angular/router';
 export class LoginFormComponent {
 email: string = ""
 password: string = ""
-message: string = "";
+message: string = ""
+showPassword: boolean = false
 
 constructor(private authService: AuthService, private router: Router){}
 
@@ -34,6 +35,8 @@ handleLogin() {
       }
     })
   }
-
+  togglePasswordVisibility() {
+    this.showPassword = !this.showPassword;
+  }
 
 }

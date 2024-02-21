@@ -6,7 +6,12 @@
     </div>
     <div class="form-group">
       <label for="password">Contraseña:</label>
-      <input type="password" id="password" name="password" [(ngModel)]="password" required>
+      <div class="password-container">
+        <input type="{{ showPassword ? 'text' : 'password' }}" id="password" name="password" formControlName="password" required>
+        <button type="button" (click)="togglePasswordVisibility()">
+          <img class="show-password" [src]="showPassword ? 'assets/eye-open.png' : 'assets/eye-closed.png'" alt="Toggle Password">
+        </button>
+      </div>
     </div>
     <button type="submit">Iniciar sesión</button>
   </form>

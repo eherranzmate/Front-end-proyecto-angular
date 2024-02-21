@@ -49,3 +49,28 @@ h2{
 .button-link-login{
   margin: 10px;
 }
+
+/* Agrega estilos según sea necesario */
+
+.password-container {
+  position: relative;
+}
+
+.password-container button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.show-password{
+  width: 25px;
+  height: auto;
+}
+
+
+
+
