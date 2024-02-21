@@ -39,6 +39,12 @@ export class CartService {
     this.cartVisible = false;  
   }
 
+  removeFromCart(product: ShopProduct): void {
+    const index = this.cart.indexOf(product);
+    if (index !== -1) {
+      this.cart.splice(index, 1);
+    }
+  }
   
 }
 

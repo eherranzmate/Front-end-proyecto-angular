@@ -32,12 +32,13 @@ export class ShopProductListComponent {
     this.cartService.setCartVisibility(!currentVisibility);
   }
 
+  clearProduct(product: ShopProduct): void {
+    this.cartService.removeFromCart(product);
+  }
+
   clearCart(): void {
     this.cartService.clearCart() 
     
   }
-
-
-
 
 }

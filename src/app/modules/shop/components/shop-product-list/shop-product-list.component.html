@@ -8,9 +8,9 @@
         <!-- Mostrar productos en el desplegable -->
         <div *ngFor="let product of cartService.getCart()">
           {{product.name}} - {{product.price}}€
+          <button class="button-X" (click)="clearProduct(product)">X</button>
         </div>
         <span class="total-price">Total: {{cartService.getTotalPrice()}}€ <button (click)="clearCart()" class="pay-button">Pagar</button></span>
-        
     </div>
   </div>  
   <div class="products">
