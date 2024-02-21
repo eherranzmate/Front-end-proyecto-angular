@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { AuthService } from '../../services/auth.service';
 import { Router } from '@angular/router';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-login-form',
@@ -12,6 +13,7 @@ email: string = ""
 password: string = ""
 message: string = ""
 showPassword: boolean = false
+
 
 constructor(private authService: AuthService, private router: Router){}
 
@@ -35,8 +37,10 @@ handleLogin() {
       }
     })
   }
+  
   togglePasswordVisibility() {
     this.showPassword = !this.showPassword;
   }
+  
 
 }
